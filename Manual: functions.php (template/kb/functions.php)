@@ -137,9 +137,9 @@ if ( ! function_exists( 'manual__post_type_next_previous_link' ) ) {
 		if( !empty($previd) || !empty($nextid) ) {
 			$return = '';
 			$return .= '<div class="portfolio-next-prv-bar post_type_next_previous"><div class="container"><div class="portfolio-prev col-md-6 col-sm-12"><p class="previous_post_link_hide">';
-			if ( !empty($previd) ) { $return .= '<h5 class="hvr-icon-back"><i class="far fa-arrow-alt-circle-left"></i>&nbsp;&nbsp;<a rel="prev" href="' . get_permalink($previd). '">'.get_the_title( $previd ).'</a></h5>'; }
+			if ( !empty($previd) ) { $return .= '<h5 class="hvr-icon-back"><i class="far fa-arrow-alt-circle-left"></i>&nbsp;&nbsp;<a rel="prev" href="' . get_permalink($previd). '">Previous Question</a></h5>'; }
 			$return .= '</p> </div> <div class="portfolio-next col-md-6 col-sm-12"> <p class="next_post_link_hide">';
-			if ( !empty($nextid) ) { $return .= '<h5 class="hvr-icon-forward"><a rel="next" href="' . get_permalink($nextid). '">'.get_the_title( $nextid ).'</a>&nbsp;&nbsp;<i class="far fa-arrow-alt-circle-right"></i></h5>'; }
+			if ( !empty($nextid) ) { $return .= '<h5 class="hvr-icon-forward"><a rel="next" href="' . get_permalink($nextid). '">Next Question</a>&nbsp;&nbsp;<i class="far fa-arrow-alt-circle-right"></i></h5>'; }
 			$return .= '</p></div></div></div>';
 		} else {
 			$return = '';
